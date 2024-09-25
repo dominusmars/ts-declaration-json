@@ -1,0 +1,9 @@
+# Jest
+coverage
+
+
+# Remove testing files
+testing*
+
+# remove node_modules
+node_modules
