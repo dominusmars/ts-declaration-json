@@ -1,6 +1,6 @@
 {
     "name": "ts-declaration-json",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "description": "Read Typescript Modules and Convert their Declarations into JSON",
     "main": "./dist/src/index.js",
     "repository": {
@@ -10,7 +10,7 @@
         "build": "tsc",
         "test": "jest"
     },
-    "typings": "./dist/src/types/index.d.ts",
+    "types": "./dist/src/index.d.ts",
     "type": "module",
     "keywords": [
         "typescript",
