@@ -6,8 +6,7 @@ export type UnknownDeclaration = {
 };
 export type FunctionDeclaration = {
     optional?: boolean;
-
-    type: function;
+    type: "function";
     text: string;
 };
 
@@ -66,7 +65,7 @@ export type TypeDeclaration = {
     implementation: Implementation | TypeDeclaration;
     text: string;
     error?: string;
-    [key: string];
+    [key: string]: any;
 };
 
 export type InterfaceDeclaration = {

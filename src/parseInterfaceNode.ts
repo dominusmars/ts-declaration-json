@@ -1,5 +1,5 @@
 import * as ts from "typescript";
-import { InterfaceDeclaration } from "../types";
+import { InterfaceDeclaration } from "./types";
 import { extractTypeFromString } from "./utils/extractTypes";
 export function parseInterfaceNode(node: ts.InterfaceDeclaration) {
     const propTypes: InterfaceDeclaration = {

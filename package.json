@@ -10,7 +10,7 @@
         "build": "tsc",
         "test": "jest"
     },
-    "types": "./types/index.d.ts",
+    "typings": "./dist/src/types/index.d.ts",
     "type": "module",
     "keywords": [
         "typescript",

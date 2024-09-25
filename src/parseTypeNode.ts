@@ -1,5 +1,5 @@
 import * as ts from "typescript";
-import { FunctionDeclaration, Implementation, PropertyDeclaration, TypeDeclaration, UnionDeclaration, UnknownDeclaration } from "../types";
+import { FunctionDeclaration, Implementation, PropertyDeclaration, TypeDeclaration, UnionDeclaration, UnknownDeclaration } from "./types";
 import { extractTypeFromString } from "./utils/extractTypes";
 
 function parseProperty(node: ts.Node): PropertyDeclaration {
@@ -76,7 +76,7 @@ function parsePropertySignature(node: ts.PropertySignature): PropertyDeclaration
         optional: optional,
         type: nodeType,
         text: node.getText(),
-    };
+    } as UnknownDeclaration;
 }
 
 export function parseTypeDeclaration(node: ts.TypeNode): TypeDeclaration {
