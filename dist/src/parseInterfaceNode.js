@@ -12,7 +12,7 @@ function parseInterfaceNode(node) {
         var _a;
         const paramName = ((_a = param.name) === null || _a === void 0 ? void 0 : _a.getText()) || "unknown";
         const paramType = param.getText() ? (0, extractTypes_1.extractTypeFromString)(param.getText()) : "any";
-        const optional = paramName.includes("?");
+        const optional = !!param.questionToken || param.getText().includes("?");
         propTypes.implementation[paramName] = {
             text: param.getText(),
             optional: optional,

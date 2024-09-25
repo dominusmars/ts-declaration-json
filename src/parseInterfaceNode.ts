@@ -11,7 +11,8 @@ export function parseInterfaceNode(node: ts.InterfaceDeclaration) {
     node.members.forEach((param) => {
         const paramName = param.name?.getText() || "unknown";
         const paramType = param.getText() ? extractTypeFromString(param.getText()) : "any";
-        const optional = paramName.includes("?");
+        const optional = !!param.questionToken || param.getText().includes("?");
+
         propTypes.implementation[paramName] = {
             text: param.getText(),
             optional: optional,

@@ -1,6 +1,6 @@
 {
     "name": "ts-declaration-json",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Read Typescript Modules and Convert their Declarations into JSON",
     "main": "./dist/src/index.js",
     "scripts": {
@@ -21,6 +21,7 @@
     "author": "Mohamad Khawam",
     "license": "ISC",
     "dependencies": {
+        "ts-declaration-json": "file:",
         "ts-node": "^10.9.2",
         "typescript": "^5.6.2"
     },
