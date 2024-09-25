@@ -1,5 +1,5 @@
 import * as ts from "typescript";
-import { FunctionDeclaration, Implementation, PropertyDeclaration, TypeDeclaration, UnionDeclaration, UnknownDeclaration } from "./types/Modules";
+import { FunctionDeclaration, Implementation, PropertyDeclaration, TypeDeclaration, UnionDeclaration, UnknownDeclaration } from "../types";
 import { extractTypeFromString } from "./utils/extractTypes";
 
 function parseProperty(node: ts.Node): PropertyDeclaration {

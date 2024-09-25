@@ -1,7 +1,7 @@
 import * as ts from "typescript";
 import fs from "fs";
 import path from "path";
-import { ModuleDeclaration } from "./types/Modules";
+import { ModuleDeclaration } from "../types";
 import { parseInterfaceNode } from "./parseInterfaceNode";
 import { parseTypeNode } from "./parseTypeNode";
 
