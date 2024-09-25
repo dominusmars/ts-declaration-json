@@ -3,6 +3,9 @@
     "version": "1.0.1",
     "description": "Read Typescript Modules and Convert their Declarations into JSON",
     "main": "./dist/src/index.js",
+    "repository": {
+        "url": "https://github.com/dominusmars/ts-declaration-json"
+    },
     "scripts": {
         "build": "tsc",
         "test": "jest"
